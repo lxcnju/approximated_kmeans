@@ -1,0 +1,48 @@
+Extracting /home/lxcnju/workspace/datasets/mnist/train-images-idx3-ubyte.gz
+Extracting /home/lxcnju/workspace/datasets/mnist/train-labels-idx1-ubyte.gz
+Extracting /home/lxcnju/workspace/datasets/mnist/t10k-images-idx3-ubyte.gz
+Extracting /home/lxcnju/workspace/datasets/mnist/t10k-labels-idx1-ubyte.gz
+-0.9999999999999969 0.1 -0.1
+###################################
+Cluster on raw data and evaluate...
+Begin clustering on raw data...
+Data shape =  (20000, 784)
+Clustering on raw data, using time =  23.352347135543823
+(10,)
+CP =  753.621654510498
+SP =  0.029324679407808515
+RI =  0.02131142807140357
+ARI =  0.3510193126274042
+###################################
+###################################
+Cluster on random projection data and evaluate...
+Begin clustering on low-dimension data...
+Data shape =  (20000, 784)
+First random projection...
+Random projection time =  0.19538378715515137
+Second kmeans...
+Clustering on low-dimension data, using time =  5.58022403717041
+(10,)
+CP =  752.7173385620117
+SP =  0.026789784762594436
+RI =  0.01974945997299865
+ARI =  0.3156799221426517
+###################################
+###################################
+Cluster on random sparsification data and evaluate...
+Begin clustering on sparsed data...
+Data shape =  (20000, 784)
+First random projection...
+Random projection time =  0.19722223281860352
+Second random sparsification...
+Random projection time =  0.2131659984588623
+Before sparsification, the number of zero-elements is: 2.5e-06
+After sparsification, the number of zero-elements is: 0.4569915
+Second kmeans...
+Clustering on low-dimension data, using time =  5.803869009017944
+(10,)
+CP =  743.7544250488281
+SP =  0.025354766017860835
+RI =  0.019815125756287813
+ARI =  0.3189104948848726
+###################################
